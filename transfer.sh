@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-LFTP_COMMAND="docker run -it --network=host -v $PWD:/tmp lftp" 
+LFTP_COMMAND="docker run -it --network=host -v $PWD:/tmp jonataa/lftp" 
 TARGET_LOCAL=./tmp
 
 download_files_from_ftp()
@@ -19,7 +19,7 @@ upload_files_to_ftp()
 clean()
 {
   TMP_FOLDER=$1
-  rm -r $TMP_FOLDER 2> /dev/null
+  rm -rf $TMP_FOLDER 2> /dev/null
   mkdir $TMP_FOLDER
 }
 
@@ -28,13 +28,13 @@ YELLOW='\033[0;33m'
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 
-echo "${YELLOW}Clean Up...${NC}"
+echo "🧹 ${YELLOW}Clean Up...${NC}"
 clean $TARGET_LOCAL
 
-echo "${BLUE}Download all files from $1${NC}"
+echo "👇 ${BLUE}Download all files from $1${NC}"
 download_files_from_ftp $1 $TARGET_LOCAL
 
-echo "${BLUE}Upaload all files to $2${NC}"
+echo "👆 ${BLUE}Upaload all files to $2${NC}"
 upload_files_to_ftp $2 $TARGET_LOCAL
 
 echo "🍺 ${GREEN}Finished.${NC}"
