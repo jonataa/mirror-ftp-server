@@ -11,4 +11,4 @@ sh transfer.sh ftp://bob:123456@localhost:21/source_folder ftp://alice:123456@lo
 
 ## Demo
 
-[![asciicast](https://asciinema.org/a/aZOIlSeS2x6s9ev6S1McqNRmW.png)](https://asciinema.org/a/aZOIlSeS2x6s9ev6S1McqNRmW)
+[![asciicast](https://asciinema.org/a/7a9T1E9G3S9g1czoJOTB50wxj.png)](https://asciinema.org/a/7a9T1E9G3S9g1czoJOTB50wxj)
