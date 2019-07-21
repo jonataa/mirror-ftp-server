@@ -9,4 +9,6 @@ docker build -t jonataa/lftp .
 sh transfer.sh ftp://bob:123456@localhost:21/source_folder ftp://alice:123456@localhost:21/target_folder
 ```
 
+## Demo
+
 [![asciicast](https://asciinema.org/a/aZOIlSeS2x6s9ev6S1McqNRmW.png)](https://asciinema.org/a/aZOIlSeS2x6s9ev6S1McqNRmW)
