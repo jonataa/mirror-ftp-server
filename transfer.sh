@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-LFTP_COMMAND="docker run -it --network=host -v $PWD:/tmp jonataa/lftp" 
+LFTP_COMMAND="docker run --rm -it --network=host -v $PWD:/tmp jonataa/lftp" 
 TARGET_LOCAL=./tmp
 
 download_files_from_ftp()
